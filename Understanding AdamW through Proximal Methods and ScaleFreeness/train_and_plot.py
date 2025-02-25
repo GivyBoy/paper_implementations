@@ -126,7 +126,7 @@ def verify_gpu_usage(model, optimizer):
                 if isinstance(tensor, torch.Tensor) and not tensor.is_cuda:
                     raise RuntimeError(f"Found optimizer state {name} on CPU")
 
-    print("✓ All tensors are on GPU")
+    print("All tensors are on GPU")
 
 
 def print_gpu_memory():
